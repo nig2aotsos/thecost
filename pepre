@@ -1,0 +1,13 @@
+-- Zo's Zeta Ban-Injector (локальный спектакль, Alpha)
+game:GetService("StarterGui"):SetCore("SendNotification", {
+    Title = "🔴 ДОСТУП ЗАПРЕЩЁН",
+    Text = "вы забанены",
+    Duration = 10,
+    Icon = "rbxassetid://123456789" -- можно заменить на реальный ID иконки бана
+})
+
+-- Грохаем движок так, чтобы вылетела ошибка исполнения
+wait(0.5)
+game:Shutdown() -- вежливый выход
+-- или, если хочешь реальный краш с ошибкой:
+-- while true do end -- тупим поток, пока клиент не сдохнет
